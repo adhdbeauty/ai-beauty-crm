@@ -1,12 +1,191 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Media Assets</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Media Assets Hub</title>
+
+  <meta name="description" content="Content delivery and asset management platform">
+  <meta name="theme-color" content="#060b1f">
+
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4e1.png">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      background:#060b1f;
+      color:#ffffff;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+    }
+
+    header{
+      width:100%;
+      padding:22px 40px;
+      border-bottom:1px solid rgba(255,255,255,.06);
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      backdrop-filter:blur(10px);
+    }
+
+    .logo{
+      font-size:20px;
+      font-weight:700;
+      letter-spacing:.5px;
+    }
+
+    nav{
+      display:flex;
+      gap:24px;
+    }
+
+    nav a{
+      color:rgba(255,255,255,.7);
+      text-decoration:none;
+      font-size:14px;
+      transition:.2s;
+    }
+
+    nav a:hover{
+      color:#fff;
+    }
+
+    main{
+      flex:1;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:40px;
+    }
+
+    .hero{
+      max-width:800px;
+    }
+
+    h1{
+      font-size:64px;
+      margin-bottom:22px;
+      line-height:1.05;
+      letter-spacing:-2px;
+    }
+
+    p{
+      font-size:22px;
+      line-height:1.7;
+      color:rgba(255,255,255,.72);
+      margin-bottom:36px;
+    }
+
+    .buttons{
+      display:flex;
+      justify-content:center;
+      gap:18px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:14px 26px;
+      border-radius:14px;
+      text-decoration:none;
+      font-weight:600;
+      transition:.25s;
+    }
+
+    .primary{
+      background:#ffffff;
+      color:#000;
+    }
+
+    .primary:hover{
+      transform:translateY(-2px);
+    }
+
+    .secondary{
+      border:1px solid rgba(255,255,255,.15);
+      color:#fff;
+      background:rgba(255,255,255,.03);
+    }
+
+    .secondary:hover{
+      background:rgba(255,255,255,.08);
+    }
+
+    footer{
+      padding:24px;
+      text-align:center;
+      font-size:13px;
+      color:rgba(255,255,255,.4);
+      border-top:1px solid rgba(255,255,255,.05);
+    }
+
+    @media(max-width:768px){
+
+      header{
+        padding:18px 20px;
+      }
+
+      nav{
+        display:none;
+      }
+
+      h1{
+        font-size:42px;
+      }
+
+      p{
+        font-size:18px;
+      }
+    }
+  </style>
+
 </head>
-<body style="background:#0b1020;color:white;font-family:sans-serif;text-align:center;padding-top:100px;">
-  <h1>Media Assets Hub</h1>
-  <p>Content delivery and asset management platform.</p>
+
+<body>
+
+  <header>
+    <div class="logo">MediaAssets</div>
+
+    <nav>
+      <a href="#">Platform</a>
+      <a href="#">Developers</a>
+      <a href="#">Resources</a>
+      <a href="#">Support</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="hero">
+
+      <h1>Media Assets Hub</h1>
+
+      <p>
+        Secure global content delivery and distributed asset management infrastructure.
+      </p>
+
+      <div class="buttons">
+        <a class="btn primary" href="#">Get Started</a>
+        <a class="btn secondary" href="#">Documentation</a>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    © 2026 MediaAssets Infrastructure
+  </footer>
+
 </body>
 </html>
