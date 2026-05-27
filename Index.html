@@ -2,17 +2,18 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Media Assets Hub</title>
+  <title>MediaAssets Infrastructure</title>
 
-  <meta name="description" content="Content delivery and asset management platform">
-  <meta name="theme-color" content="#060b1f">
+  <meta name="description" content="Distributed media delivery and edge asset infrastructure platform">
 
   <link rel="icon" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4e1.png">
 
   <style>
+
     *{
       margin:0;
       padding:0;
@@ -20,28 +21,24 @@
     }
 
     body{
-      background:#060b1f;
-      color:#ffffff;
+      background:#050b1f;
+      color:#fff;
       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
       min-height:100vh;
-      display:flex;
-      flex-direction:column;
     }
 
     header{
-      width:100%;
-      padding:22px 40px;
-      border-bottom:1px solid rgba(255,255,255,.06);
       display:flex;
       justify-content:space-between;
       align-items:center;
+      padding:22px 40px;
+      border-bottom:1px solid rgba(255,255,255,.06);
       backdrop-filter:blur(10px);
     }
 
     .logo{
-      font-size:20px;
+      font-size:22px;
       font-weight:700;
-      letter-spacing:.5px;
     }
 
     nav{
@@ -50,52 +47,45 @@
     }
 
     nav a{
-      color:rgba(255,255,255,.7);
+      color:rgba(255,255,255,.72);
       text-decoration:none;
-      font-size:14px;
-      transition:.2s;
+      font-size:15px;
     }
 
     nav a:hover{
       color:#fff;
     }
 
-    main{
-      flex:1;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
-      padding:40px;
-    }
-
     .hero{
-      max-width:800px;
+      padding:120px 30px 80px;
+      text-align:center;
     }
 
     h1{
-      font-size:64px;
-      margin-bottom:22px;
-      line-height:1.05;
-      letter-spacing:-2px;
+      font-size:72px;
+      line-height:1;
+      margin-bottom:26px;
+      letter-spacing:-3px;
     }
 
-    p{
-      font-size:22px;
+    .subtitle{
+      max-width:850px;
+      margin:auto;
+      font-size:24px;
       line-height:1.7;
       color:rgba(255,255,255,.72);
-      margin-bottom:36px;
     }
 
     .buttons{
+      margin-top:45px;
       display:flex;
       justify-content:center;
-      gap:18px;
+      gap:20px;
       flex-wrap:wrap;
     }
 
     .btn{
-      padding:14px 26px;
+      padding:15px 30px;
       border-radius:14px;
       text-decoration:none;
       font-weight:600;
@@ -103,89 +93,167 @@
     }
 
     .primary{
-      background:#ffffff;
+      background:#fff;
       color:#000;
     }
 
-    .primary:hover{
-      transform:translateY(-2px);
-    }
-
     .secondary{
-      border:1px solid rgba(255,255,255,.15);
+      border:1px solid rgba(255,255,255,.12);
       color:#fff;
       background:rgba(255,255,255,.03);
     }
 
-    .secondary:hover{
-      background:rgba(255,255,255,.08);
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+      padding:40px;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .card{
+      background:rgba(255,255,255,.03);
+      border:1px solid rgba(255,255,255,.06);
+      padding:30px;
+      border-radius:18px;
+    }
+
+    .card h3{
+      font-size:36px;
+      margin-bottom:10px;
+    }
+
+    .card p{
+      color:rgba(255,255,255,.6);
+      line-height:1.6;
+    }
+
+    .routes{
+      max-width:1000px;
+      margin:80px auto;
+      padding:0 30px;
+    }
+
+    .routes h2{
+      margin-bottom:24px;
+      font-size:36px;
+    }
+
+    .route-list{
+      display:grid;
+      gap:16px;
+    }
+
+    .route{
+      background:rgba(255,255,255,.03);
+      border:1px solid rgba(255,255,255,.06);
+      border-radius:14px;
+      padding:18px 22px;
+      font-family:monospace;
+      color:#9ad0ff;
     }
 
     footer{
-      padding:24px;
+      margin-top:80px;
+      border-top:1px solid rgba(255,255,255,.06);
       text-align:center;
-      font-size:13px;
-      color:rgba(255,255,255,.4);
-      border-top:1px solid rgba(255,255,255,.05);
+      padding:30px;
+      color:rgba(255,255,255,.45);
+      font-size:14px;
     }
 
     @media(max-width:768px){
-
-      header{
-        padding:18px 20px;
-      }
 
       nav{
         display:none;
       }
 
       h1{
-        font-size:42px;
+        font-size:48px;
       }
 
-      p{
+      .subtitle{
         font-size:18px;
       }
     }
+
   </style>
 
 </head>
 
 <body>
 
-  <header>
-    <div class="logo">MediaAssets</div>
+<header>
 
-    <nav>
-      <a href="#">Platform</a>
-      <a href="#">Developers</a>
-      <a href="#">Resources</a>
-      <a href="#">Support</a>
-    </nav>
-  </header>
+  <div class="logo">MediaAssets</div>
 
-  <main>
+  <nav>
+    <a href="/platform">Platform</a>
+    <a href="/developers">Developers</a>
+    <a href="/docs">Docs</a>
+    <a href="/status">Status</a>
+  </nav>
 
-    <div class="hero">
+</header>
 
-      <h1>Media Assets Hub</h1>
+<section class="hero">
 
-      <p>
-        Secure global content delivery and distributed asset management infrastructure.
-      </p>
+  <h1>Edge Media Infrastructure</h1>
 
-      <div class="buttons">
-        <a class="btn primary" href="#">Get Started</a>
-        <a class="btn secondary" href="#">Documentation</a>
-      </div>
+  <p class="subtitle">
+    Distributed global content delivery, edge asset optimization and secure infrastructure routing platform.
+  </p>
 
-    </div>
+  <div class="buttons">
+    <a class="btn primary" href="/docs">Documentation</a>
+    <a class="btn secondary" href="/api/status">API Status</a>
+  </div>
 
-  </main>
+</section>
 
-  <footer>
-    © 2026 MediaAssets Infrastructure
-  </footer>
+<section class="stats">
+
+  <div class="card">
+    <h3>148+</h3>
+    <p>Global edge routing regions and media acceleration nodes.</p>
+  </div>
+
+  <div class="card">
+    <h3>99.99%</h3>
+    <p>Infrastructure uptime across distributed delivery systems.</p>
+  </div>
+
+  <div class="card">
+    <h3>12PB</h3>
+    <p>Monthly cached media and optimized content transfers.</p>
+  </div>
+
+</section>
+
+<section class="routes">
+
+  <h2>Infrastructure Endpoints</h2>
+
+  <div class="route-list">
+
+    <div class="route">/api/status</div>
+
+    <div class="route">/cdn/assets</div>
+
+    <div class="route">/edge/cache</div>
+
+    <div class="route">/v2/connect</div>
+
+    <div class="route">/platform/docs</div>
+
+  </div>
+
+</section>
+
+<footer>
+  © 2026 MediaAssets Infrastructure Network
+</footer>
 
 </body>
 </html>
